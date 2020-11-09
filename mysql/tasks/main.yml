@@ -1,0 +1,5 @@
+---
+# tasks file for mysql
+- name: 'create user'
+  user:
+    name: "{{ user_name }}"

@@ -1,0 +1,11 @@
+---
+- name: create users
+  hosts: amazon
+  become: true
+  tasks: 
+    - name: create test user
+      user:
+        name: awstest
+    - name: create oracle user
+      user:
+        name: oracle
